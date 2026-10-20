@@ -16,5 +16,8 @@
     "remotion": "4.0.537"
   },
   "version": "1.0.0",
-  "license": "MIT"
+  "license": "MIT",
+  "dotrino": {
+    "kind": "other"
+  }
 }
