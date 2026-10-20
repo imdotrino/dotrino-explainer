@@ -1,0 +1,20 @@
+{
+  "name": "dotrino-explainer",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render:es": "remotion render src/index.ts ExplainerEs out/dotrino-es.mp4",
+    "render:en": "remotion render src/index.ts ExplainerEn out/dotrino-en.mp4",
+    "render": "npm run render:es && npm run render:en"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.537",
+    "lucide-react": "1.60.0",
+    "react": "19.2.0",
+    "react-dom": "19.2.0",
+    "remotion": "4.0.537"
+  },
+  "version": "1.0.0",
+  "license": "MIT"
+}

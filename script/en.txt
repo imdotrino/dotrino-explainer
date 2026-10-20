@@ -1,0 +1,6 @@
+Dotrino is an ecosystem of apps that builds security on trust between your devices.
+Accounts are created automatically. Your information is shared only between trusted devices, and it never leaves them unless you decide it should.
+To get started, choose the device you trust most: it will be your Vault.
+Your Vault can be your own phone, your personal computer, or Dotrino can host it so it's always available.
+Everything is end-to-end encrypted. No one outside your devices can see it, not even Dotrino.
+Welcome.

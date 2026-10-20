@@ -1,0 +1,6 @@
+Dotrino es un ecosistema de aplicaciones que basa la seguridad en la confianza entre dispositivos.
+Las cuentas se crean automáticamente. La información se distribuye únicamente entre dispositivos de confianza y nunca sale de ellos, a menos que tú lo decidas.
+Para empezar, elige el dispositivo en el que más confías: será tu Bóveda.
+La Bóveda puede ser tu propio teléfono, tu computadora personal, o puede alojarla Dotrino para que esté siempre disponible.
+Toda la información está cifrada de extremo a extremo. Nadie fuera de tus dispositivos puede verla, ni siquiera Dotrino.
+Bienvenido.

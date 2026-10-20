@@ -1,0 +1,32 @@
+1
+00:00:00,100 --> 00:00:05,547
+Dotrino is an ecosystem of apps that builds security on trust between your devices.
+
+2
+00:00:05,497 --> 00:00:07,971
+Accounts are created automatically.
+
+3
+00:00:07,971 --> 00:00:14,786
+Your information is shared only between trusted devices, and it never leaves them unless you decide it should.
+
+4
+00:00:14,786 --> 00:00:19,221
+To get started, choose the device you trust most: it will be your Vault.
+
+5
+00:00:19,221 --> 00:00:26,247
+Your Vault can be your own phone, your personal computer, or Dotrino can host it so it's always available.
+
+6
+00:00:26,247 --> 00:00:28,668
+Everything is end-to-end encrypted.
+
+7
+00:00:28,668 --> 00:00:32,707
+No one outside your devices can see it, not even Dotrino.
+
+8
+00:00:32,707 --> 00:00:33,865
+Welcome.
+
