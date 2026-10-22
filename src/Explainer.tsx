@@ -13,8 +13,10 @@ import {
 
 export const FPS = 30;
 
-// La narración empieza cuando el logo ya se está yendo.
-const AUDIO_START = 30;
+// El logo se queda quieto los primeros 3 s: X elige su propio cuadro de portada
+// y así cae en el pájaro. La narración empieza cuando el logo ya se está yendo.
+const INTRO_HOLD = 90;
+const AUDIO_START = INTRO_HOLD + 30;
 const f = (s: number) => Math.round(s * FPS);
 const at = (s: number) => AUDIO_START + f(s);
 
@@ -537,7 +539,7 @@ const ExplainerBody: React.FC = () => {
   const L = useLang();
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
-  const introOpacity = interpolate(frame, [18, 42], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
+  const introOpacity = interpolate(frame, [INTRO_HOLD + 18, INTRO_HOLD + 42], [1, 0], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp' });
   return (
     <AbsoluteFill>
       <Backdrop />
