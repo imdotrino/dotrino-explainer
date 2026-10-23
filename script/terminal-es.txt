@@ -1,0 +1,7 @@
+Con Dotrino Terminal entras a tu computadora desde cualquier dispositivo: tu teléfono, una tablet u otra computadora.
+Primero, en la computadora a la que quieres entrar, instala el agente de Terminal con un solo comando.
+La primera vez te pide enlazarla con tu Bóveda. En la Bóveda pide una invitación, pégala en el agente y aprueba el código que te muestra. Se hace una sola vez.
+Después enlaza el dispositivo desde el que vas a entrar: escanea la invitación de tu Bóveda y aprueba en ella el código que aparece en la pantalla.
+Listo. Abre Terminal en ese dispositivo. Tus computadoras aparecen solas en la lista. Elige una y ya estás dentro.
+Lo que escribes viaja cifrado de extremo a extremo, solo entre tus dispositivos. Si cierras la app, la consola sigue abierta en tu computadora, y la retomas donde la dejaste.
+Dotrino Terminal. Tu computadora, desde cualquier lugar.

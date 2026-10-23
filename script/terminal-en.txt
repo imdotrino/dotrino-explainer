@@ -1,0 +1,7 @@
+With Dotrino Terminal you get into your computer from any device: your phone, a tablet or another computer.
+First, on the computer you want to get into, install the Terminal agent with a single command.
+The first time, it asks you to link it to your Vault. In your Vault, ask for an invitation, paste it into the agent and approve the code it shows you. You only do this once.
+Then link the device you'll use to get in: scan the invitation from your Vault and approve there the code that appears on the screen.
+That's it. Open Terminal on that device. Your computers show up in the list by themselves. Pick one and you're in.
+What you type travels end-to-end encrypted, only between your devices. If you close the app, the console stays open on your computer, and you pick up where you left off.
+Dotrino Terminal. Your computer, from anywhere.

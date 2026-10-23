@@ -1,0 +1,56 @@
+1
+00:00:00,100 --> 00:00:07,756
+Con Dotrino Terminal entras a tu computadora desde cualquier dispositivo: tu teléfono, una tablet u otra computadora.
+
+2
+00:00:07,706 --> 00:00:14,411
+Primero, en la computadora a la que quieres entrar, instala el agente de Terminal con un solo comando.
+
+3
+00:00:14,411 --> 00:00:17,819
+La primera vez te pide enlazarla con tu Bóveda.
+
+4
+00:00:17,819 --> 00:00:23,496
+En la Bóveda pide una invitación, pégala en el agente y aprueba el código que te muestra.
+
+5
+00:00:23,496 --> 00:00:25,877
+Se hace una sola vez.
+
+6
+00:00:25,877 --> 00:00:34,411
+Después enlaza el dispositivo desde el que vas a entrar: escanea la invitación de tu Bóveda y aprueba en ella el código que aparece en la pantalla.
+
+7
+00:00:34,411 --> 00:00:35,927
+Listo.
+
+8
+00:00:35,927 --> 00:00:38,809
+Abre Terminal en ese dispositivo.
+
+9
+00:00:38,809 --> 00:00:42,218
+Tus computadoras aparecen solas en la lista.
+
+10
+00:00:42,218 --> 00:00:44,924
+Elige una y ya estás dentro.
+
+11
+00:00:44,924 --> 00:00:50,488
+Lo que escribes viaja cifrado de extremo a extremo, solo entre tus dispositivos.
+
+12
+00:00:50,488 --> 00:00:56,578
+Si cierras la app, la consola sigue abierta en tu computadora, y la retomas donde la dejaste.
+
+13
+00:00:56,578 --> 00:00:58,571
+Dotrino Terminal.
+
+14
+00:00:58,571 --> 00:01:01,829
+Tu computadora, desde cualquier lugar.
+

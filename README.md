@@ -1,6 +1,6 @@
 # dotrino-explainer
 
-Fuentes del video «¿Qué es Dotrino?» / «What is Dotrino?» que se muestra en la portada de
+Fuentes de los videos del ecosistema: «¿Qué es Dotrino?» / «What is Dotrino?» que se muestra en la portada de
 [dotrino.com](https://dotrino.com/). Está hecho con [Remotion](https://www.remotion.dev/)
 (React → MP4), y cada fotograma sale de este código.
 
@@ -17,6 +17,8 @@ Fuentes del video «¿Qué es Dotrino?» / «What is Dotrino?» que se muestra e
 | `src/Illustrations.tsx` | Las ilustraciones SVG: aparatos, bóveda, candado, nube de Dotrino… |
 | `src/lang.ts` | Lo que cambia por idioma: audio, guion, tiempos y palabras en pantalla |
 | `src/Root.tsx` | Composiciones `ExplainerEs` y `ExplainerEn` (1920×1080, 30 fps) |
+| `src/TerminalVideo.tsx` | Video «Dotrino Terminal» (es/en): escenas, guion y tiempos por idioma |
+| `src/TerminalArt.tsx` | Su arte: consola, monitor, pantallas del teléfono, invitación, código, túnel cifrado |
 | `public/` | Logo (`bird.png`), fuentes del tema (Quicksand, Comfortaa) y las narraciones |
 | `script/` | Guion aprobado (`es.txt`, `en.txt`) y los tiempos de la voz (`.srt`) |
 
@@ -26,6 +28,7 @@ Fuentes del video «¿Qué es Dotrino?» / «What is Dotrino?» que se muestra e
 npm install
 npm run studio        # vista previa interactiva
 npm run render        # out/dotrino-es.mp4 y out/dotrino-en.mp4
+npm run render:terminal  # out/terminal-es.mp4 y out/terminal-en.mp4
 ```
 
 ## Cambiar el guion o la voz

@@ -6,7 +6,10 @@
     "studio": "remotion studio src/index.ts",
     "render:es": "remotion render src/index.ts ExplainerEs out/dotrino-es.mp4",
     "render:en": "remotion render src/index.ts ExplainerEn out/dotrino-en.mp4",
-    "render": "npm run render:es && npm run render:en"
+    "render": "npm run render:es && npm run render:en",
+    "render:terminal-es": "remotion render src/index.ts TerminalEs out/terminal-es.mp4",
+    "render:terminal-en": "remotion render src/index.ts TerminalEn out/terminal-en.mp4",
+    "render:terminal": "npm run render:terminal-es && npm run render:terminal-en"
   },
   "dependencies": {
     "@remotion/cli": "4.0.537",
@@ -15,7 +18,7 @@
     "react-dom": "19.2.0",
     "remotion": "4.0.537"
   },
-  "version": "1.0.0",
+  "version": "1.2.0",
   "license": "MIT",
   "dotrino": {
     "kind": "other"

@@ -1,0 +1,56 @@
+1
+00:00:00,100 --> 00:00:07,139
+With Dotrino Terminal you get into your computer from any device: your phone, a tablet or another computer.
+
+2
+00:00:07,089 --> 00:00:13,589
+First, on the computer you want to get into, install the Terminal agent with a single command.
+
+3
+00:00:13,589 --> 00:00:16,892
+The first time, it asks you to link it to your Vault.
+
+4
+00:00:16,892 --> 00:00:23,668
+In your Vault, ask for an invitation, paste it into the agent and approve the code it shows you.
+
+5
+00:00:23,668 --> 00:00:25,615
+You only do this once.
+
+6
+00:00:25,615 --> 00:00:33,247
+Then link the device you'll use to get in: scan the invitation from your Vault and approve there the code that appears on the screen.
+
+7
+00:00:33,247 --> 00:00:34,260
+That's it.
+
+8
+00:00:34,260 --> 00:00:36,405
+Open Terminal on that device.
+
+9
+00:00:36,405 --> 00:00:39,431
+Your computers show up in the list by themselves.
+
+10
+00:00:39,431 --> 00:00:41,076
+Pick one and you're in.
+
+11
+00:00:41,076 --> 00:00:45,721
+What you type travels end-to-end encrypted, only between your devices.
+
+12
+00:00:45,721 --> 00:00:51,576
+If you close the app, the console stays open on your computer, and you pick up where you left off.
+
+13
+00:00:51,576 --> 00:00:53,207
+Dotrino Terminal.
+
+14
+00:00:53,207 --> 00:00:55,536
+Your computer, from anywhere.
+

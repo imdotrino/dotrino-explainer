@@ -15,8 +15,8 @@ export const FPS = 30;
 
 // El logo se queda quieto los primeros 3 s: X elige su propio cuadro de portada
 // y así cae en el pájaro. La narración empieza cuando el logo ya se está yendo.
-const INTRO_HOLD = 90;
-const AUDIO_START = INTRO_HOLD + 30;
+export const INTRO_HOLD = 90;
+export const AUDIO_START = INTRO_HOLD + 30;
 const f = (s: number) => Math.round(s * FPS);
 const at = (s: number) => AUDIO_START + f(s);
 
@@ -26,14 +26,14 @@ const useLang = () => useContext(LangCtx);
 const scenesOf = (L: LangConfig) =>
   L.scenes.map((to, i) => ({ from: i === 0 ? at(0) - 6 : at(L.scenes[i - 1]), to: at(to) }));
 export const totalFrames = (lang: Lang) => at(LANGS[lang].audioLen) + f(2.2);
-const OVERLAP = 12;
+export const OVERLAP = 12;
 
-const CX = 960;
-const CY = 430;
+export const CX = 960;
+export const CY = 430;
 
 // ---------- piezas comunes ----------
 
-const useFonts = () => {
+export const useFonts = () => {
   const [handle] = useState(() => delayRender('fonts'));
   useEffect(() => {
     const faces = [
@@ -47,28 +47,28 @@ const useFonts = () => {
   }, [handle]);
 };
 
-const pop = (frame: number, fps: number, delay = 0, damping = 12) =>
+export const pop = (frame: number, fps: number, delay = 0, damping = 12) =>
   spring({ frame: frame - delay, fps, config: { damping, mass: 0.7 } });
 
-const ramp = (frame: number, a: number, b: number, easing?: (t: number) => number) =>
+export const ramp = (frame: number, a: number, b: number, easing?: (t: number) => number) =>
   interpolate(frame, [a, b], [0, 1], { extrapolateLeft: 'clamp', extrapolateRight: 'clamp', easing });
 
 // Sombra suave en el piso bajo un objeto.
-const Floor: React.FC<{ x: number; y: number; w: number; o?: number }> = ({ x, y, w, o = 1 }) => (
+export const Floor: React.FC<{ x: number; y: number; w: number; o?: number }> = ({ x, y, w, o = 1 }) => (
   <div style={{
     position: 'absolute', left: x - w / 2, top: y - w * 0.09, width: w, height: w * 0.18, borderRadius: '50%',
     background: 'radial-gradient(ellipse at center, rgba(5,54,116,0.22), rgba(5,54,116,0) 70%)', opacity: o,
   }} />
 );
 
-const Badge: React.FC<{ x: number; y: number; s: number; size?: number; children: React.ReactNode }> = ({ x, y, s, size = 80, children }) => (
+export const Badge: React.FC<{ x: number; y: number; s: number; size?: number; children: React.ReactNode }> = ({ x, y, s, size = 80, children }) => (
   <div style={{ position: 'absolute', left: x - size / 2, top: y - size / 2, width: size, height: size, transform: `scale(${s})`, zIndex: 5 }}>
     {children}
   </div>
 );
 
 // Envuelve una escena: entra subiendo, sale desvaneciéndose.
-const SceneShell: React.FC<{ dur: number; children: (frame: number) => React.ReactNode }> = ({ dur, children }) => {
+export const SceneShell: React.FC<{ dur: number; children: (frame: number) => React.ReactNode }> = ({ dur, children }) => {
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const enter = pop(frame, fps, 0, 16);
@@ -84,12 +84,12 @@ const SceneShell: React.FC<{ dur: number; children: (frame: number) => React.Rea
 };
 
 // Curva suave (cuadrática) entre dos puntos, con un arco hacia arriba.
-const arc = (a: { x: number; y: number }, b: { x: number; y: number }, lift = 80) => (t: number) => {
+export const arc = (a: { x: number; y: number }, b: { x: number; y: number }, lift = 80) => (t: number) => {
   const mx = (a.x + b.x) / 2, my = (a.y + b.y) / 2 - lift;
   const u = 1 - t;
   return { x: u * u * a.x + 2 * u * t * mx + t * t * b.x, y: u * u * a.y + 2 * u * t * my + t * t * b.y };
 };
-const arcD = (a: { x: number; y: number }, b: { x: number; y: number }, lift = 80) =>
+export const arcD = (a: { x: number; y: number }, b: { x: number; y: number }, lift = 80) =>
   `M ${a.x} ${a.y} Q ${(a.x + b.x) / 2} ${(a.y + b.y) / 2 - lift} ${b.x} ${b.y}`;
 
 // ---------- escenas ----------
@@ -465,7 +465,7 @@ const SceneEncrypted: React.FC<{ frame: number }> = ({ frame }) => {
 
 // ---------- capas fijas ----------
 
-const LogoCard: React.FC<{ frame: number; fps: number; size?: number }> = ({ frame, fps, size = 1 }) => {
+export const LogoCard: React.FC<{ frame: number; fps: number; size?: number }> = ({ frame, fps, size = 1 }) => {
   const s = pop(frame, fps, 0, 14);
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', transform: `scale(${size * (0.9 + 0.1 * s)})` }}>
@@ -492,7 +492,7 @@ const Captions: React.FC = () => {
   );
 };
 
-const Backdrop: React.FC = () => {
+export const Backdrop: React.FC = () => {
   const frame = useCurrentFrame();
   const blobs = [
     { x: 260, y: 220, r: 380, sp: 0.004 },
